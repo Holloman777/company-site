@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+
+
+.navbar {
+    display: flex;
+   
+    
+    align-items: center;
+    
+    background-color:  #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    
+}
+
+
+
+
+.logo {
+    background-image: url('images/logo.png');
+    width: 160px;
+    height: 160px;
+    display: block;
+    margin-right: 30px ;
+    
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    display: flex;
+   
+}
+
+.nav-links li {
+    margin-left: 250px;
+    padding: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    margin-right: 0px;
+   
+
+}
+
+.nav-links a:hover {
+    color: #211ebeea; /* Change this color to your preferred hover color */
+}
