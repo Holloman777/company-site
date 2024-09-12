@@ -1,64 +1,107 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: black;
+    background-color: #fff;
 }
 
 
 
+/* Base styles for the navbar */
 .navbar {
     display: flex;
-   
+    align-items: center; /* Vertically centers items */
+    justify-content:space-between; /* Distribute space between logo and nav-links */
+    padding: 0px 20px; /* Adjust padding as needed */
+    background-color: transparent; /* Background color of the navbar */
     
-    align-items: center;
+    color: white; /* Text color */
+    justify-content: center;
     
-    background-color:  #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    font-family: "Questrial", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-
-    
-}
-
-
-
-
-.logo {
-    background-image: url('images/logo.png');
-    width: 160px;
-    height: 160px;
-    display: block;
-    margin-right: 30px ;
-    
-}
-
-.nav-links {
-    list-style: none;
-    margin: 0;
+  }
+  
+  /* Style for the logo */
+  .logo img {
+    height: 120px; /* Adjust height as needed */
+    width: auto; /* Maintain aspect ratio */
     display: flex;
+    justify-content:center;
+    padding-right: 50px;
    
-}
+  }
+  
+  /* Style for the navigation links container */
+  .container {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+   
+    
+    
+  }
+  
+  /* Style for the navigation links list */
+  .nav-links {
+    list-style-type: none; /* Remove default list styling */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Display list items in a row */
+    justify-content: center;
+    
+  }
+  
+  /* Style for each navigation link */
+  .nav-links li {
+    margin: 0 20px; /* Space between each link */
+    display: flex;
+    margin-right: 50px;
+   
+  }
+  
+  /* Style for the links */
+  .nav-links a {
+    color: black; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 16px; /* Font size of links */
+  }
+  
+  /* Optional: Add hover effect */
+  .nav-links a:hover {
+   color: blue; 
+  }
 
-.nav-links li {
-    margin-left: 250px;
-    padding: 10px;
-}
+  .home-text h1  {
+    text-align: center;
+    padding-left: 20px;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   padding-top: 2rem;
+   line-height: 2;
+   font-size: 2rem;
+   font-family: "Barlow", sans-serif;
+   font-weight: 800;
+   font-style: normal;
+   
+   
+  }
 
-.nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-size: 18px;
-    transition: color 0.3s ease;
-    margin-right: 0px;
+  .home-text {
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+ 
+    
+    
+
+  }
+
+  .home-image img {
+    width: 200px;
+    height: 200px;
+   display: flex;
    
 
-}
+ 
 
-.nav-links a:hover {
-    color: #211ebeea; /* Change this color to your preferred hover color */
-}
+  }
+  
