@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #fff;
+    background-color: black
 }
 
 
@@ -46,6 +46,11 @@ body {
     padding: 0;
     display: flex; /* Display list items in a row */
     justify-content: center;
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  
+    
     
   }
   
@@ -59,49 +64,98 @@ body {
   
   /* Style for the links */
   .nav-links a {
-    color: black; /* Link color */
+    color: white; /* Link color */
     text-decoration: none; /* Remove underline from links */
     font-size: 16px; /* Font size of links */
   }
   
   /* Optional: Add hover effect */
   .nav-links a:hover {
-   color: blue; 
+   color: red
   }
 
-  .home-text h1  {
-    text-align: center;
-    padding-left: 20px;
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   padding-top: 2rem;
-   line-height: 2;
-   font-size: 2rem;
-   font-family: "Barlow", sans-serif;
-   font-weight: 800;
-   font-style: normal;
-   
-   
-  }
+/* Ensure the parent container is centered */
+.home-text .container {
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  text-align: left; /* Aligns text inside child elements to the left */
+  height: 50vh; /* Height of the container, adjust as needed */
+  width: 100%; /* Full width of its parent */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  margin: 50px auto; /* Center container with margins */
+  background-image: url('images/jonathan-gallegos-5FGqfV6UjzI-unsplash.jpg'); /* Path to your image */
+  background-size: cover; /* Cover the container while maintaining the aspect ratio */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  opacity: 0.9;
+}
 
-  .home-text {
-    background-color: beige;
-    display: flex;
+/* Style for the heading */
+.home-text h1 {
+ 
+  line-height: 2;
+  font-size: 2rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: white;
+  text-align: center;
+ 
+
+  
+ 
+  
+  
+  
+}
+
+
+
+  
+
+  /* gallery */
+
+
+    
+  .gallery-container {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    padding-top: 10px;
+    
+    align-items: center;
     justify-content: center;
-    margin: 50px;
- 
-    
-    
-
-  }
-
-  .home-image img {
-    width: 200px;
-    height: 200px;
-   display: flex;
-   
-
- 
-
   }
   
+  .gallery-images img {
+    height: 400px;
+    width: 400px;
+    padding: 10px 10px;
+    padding-top: 80px;
+    border-radius: 30%;
+  }
+
+
+  .gallery-container h1 {
+    line-height: 2;
+    font-size: 3rem;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 120px;
+    color: white;
+    padding-top: 20px;
+
+ 
+   
+
+  }
