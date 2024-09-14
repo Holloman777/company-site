@@ -39,8 +39,8 @@ body {
   padding: 0;
   display: flex; /* Display list items in a row */
   justify-content: center;
-  font-family: "Barlow", sans-serif;
-  font-weight: 600;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
   font-style: normal;
   font-size: 1.75rem;
 }
@@ -79,7 +79,7 @@ body {
   background-repeat: no-repeat; /* Prevent image repetition */
   opacity: 0.9;
   position: relative;
-  top: -100px; /* Moves the background and content up into the navbar */
+  top: -105px; /* Moves the background and content up into the navbar */
   z-index: 1; /* Make sure this section is below the navbar */
 }
 
@@ -87,8 +87,9 @@ body {
 .home-text h1 {
   line-height: 2;
   font-size: 2rem;
-  font-family: "Barlow", sans-serif;
-  font-weight: 500;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   padding-left: 50px;
   padding-right: 50px;
   color: white;
@@ -120,8 +121,9 @@ body {
   .gallery-container h1 {
     line-height: 2;
     font-size: 3rem;
-    font-family: "Barlow", sans-serif;
+    font-family: "Varela Round", sans-serif;
     font-weight: 400;
+    font-style: normal;
     text-align: center;
     color: white;
     margin: 20px 20px; /* Space between heading and images */
@@ -147,6 +149,94 @@ body {
 
 
   }
+
+  .icon-small {
+    font-size: 18px; /* Adjust this size as needed */
+    margin: 0 8px; /* Space between icons */
+    padding-top: 15px;
+}
+
+.nav-links {
+    list-style: none; /* Removes default list styling */
+    padding: 0; /* Removes default padding */
+    display: flex; /* Aligns items in a row */
+    align-items: center; /* Centers items vertically */
+}
+
+.nav-links li {
+    margin: 0 30px; /* Optional: Space between nav items */
+}
+
+/* Team */
+
+/* Flex Container */
+.team-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;    /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  height: 100vh;          /* Full viewport height */
+  width: 100%;            /* Full width */
+  padding: 20px;          /* Add padding around the container */
+  box-sizing: border-box; /* Include padding in width/height */
+}
+
+.team-container h1 {
+  color: #f9f9f9;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+}
+
+/* Box Styling */
+.team-box {
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically */
+  align-items: center;    /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  width: 300px;           /* Set a fixed width for the box */
+  
+  border-radius: 50%;     /* Rounded corners */
+  padding: 20px;          /* Padding inside the box */
+  background-color: black; /* Background color for the box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for a subtle 3D effect */
+}
+
+/* Image Styling */
+.team-image img {
+  max-width: 100%;         /* Ensure image fits within the box */
+  height: auto;            /* Maintain aspect ratio */
+  border-radius: 5px;     /* Rounded corners for the image */
+}
+
+/* Text Styling */
+.team-text {
+  text-align: center;      /* Center text within the box */
+  margin-top: 10px;        /* Space between image and text */
+}
+
+.team-text h2 {
+  margin: 0;               /* Remove default margin for heading */
+  font-size: 1.5em;        /* Font size for the heading */
+}
+
+.team-text p {
+  margin: 0;               /* Remove default margin for paragraph */
+  font-size: 1em;          /* Font size for the paragraph */
+  color: #f9f9f9; 
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+
+
+
+
 
   .gallery-images img:hover {
     transform: scale(1.2); /* Expand image by 20% */
