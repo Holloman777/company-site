@@ -1,117 +1,104 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: black
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
 }
-
-
 
 /* Base styles for the navbar */
 .navbar {
-    display: flex;
-    align-items: center; /* Vertically centers items */
-    justify-content:space-between; /* Distribute space between logo and nav-links */
-    padding: 0px 20px; /* Adjust padding as needed */
-    background-color: transparent; /* Background color of the navbar */
-    
-    color: white; /* Text color */
-    justify-content: center;
-    
-  }
-  
-  /* Style for the logo */
-  .logo img {
-    height: 120px; /* Adjust height as needed */
-    width: auto; /* Maintain aspect ratio */
-    display: flex;
-    justify-content:center;
-    padding-right: 50px;
-   
-  }
-  
-  /* Style for the navigation links container */
-  .container {
-    display: flex;
-    align-items:center;
-    justify-content: center;
-   
-    
-    
-  }
-  
-  /* Style for the navigation links list */
-  .nav-links {
-    list-style-type: none; /* Remove default list styling */
-    margin: 0;
-    padding: 0;
-    display: flex; /* Display list items in a row */
-    justify-content: center;
-    font-family: "Barlow", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  
-    
-    
-  }
-  
-  /* Style for each navigation link */
-  .nav-links li {
-    margin: 0 20px; /* Space between each link */
-    display: flex;
-    margin-right: 50px;
-   
-  }
-  
-  /* Style for the links */
-  .nav-links a {
-    color: white; /* Link color */
-    text-decoration: none; /* Remove underline from links */
-    font-size: 16px; /* Font size of links */
-  }
-  
-  /* Optional: Add hover effect */
-  .nav-links a:hover {
-   color: red
-  }
+  display: flex;
+  align-items: center; /* Vertically centers items */
+  justify-content: space-between; /* Distribute space between logo and nav-links */
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: transparent; /* Make navbar transparent */
+  color: white; /* Text color */
+  position: relative;
+  z-index: 10; /* Keep the navbar on top */
+}
 
-/* Ensure the parent container is centered */
+/* Style for the logo */
+.logo img {
+  height: 60px; /* Adjust height as needed */
+  width: auto; /* Maintain aspect ratio */
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-left: 50px;
+}
+
+/* Style for the navigation links container */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style for the navigation links list */
+.nav-links {
+  list-style-type: none; /* Remove default list styling */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Display list items in a row */
+  justify-content: center;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.75rem;
+}
+
+/* Style for each navigation link */
+.nav-links li {
+  margin: 0 50px; /* Space between each link */
+  margin-right: 50px;
+}
+
+/* Style for the links */
+.nav-links a {
+  color: white; /* Link color */
+  text-decoration: none; /* Remove underline from links */
+  font-size: 16px; /* Font size of links */
+}
+
+/* Optional: Add hover effect */
+.nav-links a:hover {
+  color: rgb(219, 42, 42);
+
+}
+
+/* Home Text Section - Ensure the parent container is centered */
 .home-text .container {
   display: flex;
   justify-content: center; /* Centers content horizontally */
   align-items: center; /* Centers content vertically */
   text-align: left; /* Aligns text inside child elements to the left */
-  height: 50vh; /* Height of the container, adjust as needed */
+  height: 70vh; /* Height of the container */
   width: 100%; /* Full width of its parent */
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  margin: 50px auto; /* Center container with margins */
   background-image: url('images/jonathan-gallegos-5FGqfV6UjzI-unsplash.jpg'); /* Path to your image */
   background-size: cover; /* Cover the container while maintaining the aspect ratio */
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; /* Prevent image repetition */
   opacity: 0.9;
+  position: relative;
+  top: -100px; /* Moves the background and content up into the navbar */
+  z-index: 1; /* Make sure this section is below the navbar */
 }
 
 /* Style for the heading */
 .home-text h1 {
- 
   line-height: 2;
   font-size: 2rem;
   font-family: "Barlow", sans-serif;
   font-weight: 500;
-  font-style: normal;
   padding-left: 50px;
   padding-right: 50px;
   color: white;
   text-align: center;
- 
-
-  
- 
-  
-  
-  
+  margin-top: 0;
+  position: relative;
+  z-index: 1; /* Make sure the text is above the background */
 }
 
+/* Ensures navbar content remains visible above the background */
 
 
   
@@ -121,41 +108,58 @@ body {
 
     
   .gallery-container {
-    display: inline-block;
-    max-width: 100%;
-    height: auto;
-    flex-wrap: wrap;
-    padding-left: 100px;
-    padding-top: 10px;
-    
-    align-items: center;
-    justify-content: center;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    padding: 20px; /* General padding */
+    max-width: 100%; /* Make sure container doesn't exceed viewport */
+    margin: 20px;
   }
   
-  .gallery-images img {
-    height: 400px;
-    width: 400px;
-    padding: 10px 10px;
-    padding-top: 80px;
-    border-radius: 30%;
-  }
-
-
   .gallery-container h1 {
     line-height: 2;
     font-size: 3rem;
     font-family: "Barlow", sans-serif;
     font-weight: 400;
-    font-style: normal;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-right: 120px;
     color: white;
-    padding-top: 20px;
+    margin: 20px 20px; /* Space between heading and images */
+  }
+  
+  .gallery-images {
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+    justify-content: center; /* Center images horizontally */
+    gap: 20px; /* Space between images */
+    
+  
+  }
+  
+  .gallery-images img {
+    height: 200px;
+    
+    width:200px; /* Adjust image size */
+    border-radius: 50%;
+    padding: 10px;
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
 
- 
-   
 
   }
+
+  .gallery-images img:hover {
+    transform: scale(1.2); /* Expand image by 20% */
+    border-radius: 50%; /* Optional: change border-radius when hovering */
+  }
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .gallery-images img {
+      max-width: 100%; /* Full width images on small screens */
+    }
+  
+    .gallery-container h1 {
+      font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+  }
+  
