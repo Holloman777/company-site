@@ -116,7 +116,24 @@ body {
     padding: 20px; /* General padding */
     max-width: 100%; /* Make sure container doesn't exceed viewport */
     margin: 20px;
+    
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    text-align: left; /* Aligns text inside child elements to the left */
+    height: 70vh; /* Height of the container */
+    width: 100%; /* Full width of its parent */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    background-image: url('images/volodymyr-dobrovolskyy-4ikqFbcDKpg-unsplash\ \(1\).jpg'); /* Path to your image */
+    background-size: cover; /* Cover the container while maintaining the aspect ratio */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    opacity: 0.9;
+    position: relative;
+    top: 60px; /* Moves the background and content up into the navbar */
+    z-index: 1; /* Make sure this section is below the navbar */
   }
+  
   
   .gallery-container h1 {
     line-height: 2;
@@ -126,7 +143,12 @@ body {
     font-style: normal;
     text-align: center;
     color: white;
-    margin: 20px 20px; /* Space between heading and images */
+    margin: -20px  30px;
+    padding-right: 40px; /* Space between heading and images */
+    padding-top: 20px;
+    padding-bottom: 80px;
+    letter-spacing: 1;
+    
   }
   
   .gallery-images {
@@ -177,9 +199,12 @@ body {
   justify-content: center; /* Center items vertically */
   height: 100vh;          /* Full viewport height */
   width: 100%;            /* Full width */
-  padding: 20px;          /* Add padding around the container */
+  padding-top: 150px;          /* Add padding around the container */
   box-sizing: border-box; /* Include padding in width/height */
+  margin-bottom: 100px;
+
 }
+
 
 .team-container h1 {
   color: #f9f9f9;
@@ -187,6 +212,7 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 3rem;
+  margin-top: 20px;
 }
 
 /* Box Styling */
@@ -199,8 +225,9 @@ body {
   
   border-radius: 50%;     /* Rounded corners */
   padding: 20px;          /* Padding inside the box */
-  background-color: black; /* Background color for the box */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for a subtle 3D effect */
+
+  
+ 
 }
 
 /* Image Styling */
@@ -218,8 +245,14 @@ body {
 
 .team-text h2 {
   margin: 0;               /* Remove default margin for heading */
-  font-size: 1.5em;        /* Font size for the heading */
-}
+  font-size: 1.5em; 
+  color: #f9f9f9;  
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-bottom: 20px;
+}     /* Font size for the heading */
+
 
 .team-text p {
   margin: 0;               /* Remove default margin for paragraph */
@@ -228,6 +261,24 @@ body {
   font-family: "Varela Round", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+
+.team-container p {
+  color: #f9f9f9;
+  font-size: 2em; 
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  
+  color: #fff;
 }
 
 
