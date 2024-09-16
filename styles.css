@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: black;
+ 
 }
 
 /* Base styles for the navbar */
@@ -10,10 +11,12 @@ body {
   align-items: center; /* Vertically centers items */
   justify-content: space-between; /* Distribute space between logo and nav-links */
   padding: 10px 20px; /* Adjust padding as needed */
-  background-color: transparent; /* Make navbar transparent */
+   /* Make navbar transparent */
   color: white; /* Text color */
   position: relative;
   z-index: 10; /* Keep the navbar on top */
+  width: 100%;
+ 
 }
 
 /* Style for the logo */
@@ -35,7 +38,7 @@ body {
 /* Style for the navigation links list */
 .nav-links {
   list-style-type: none; /* Remove default list styling */
-  margin: 0;
+  margin-right: 50px;
   padding: 0;
   display: flex; /* Display list items in a row */
   justify-content: center;
@@ -79,8 +82,10 @@ body {
   background-repeat: no-repeat; /* Prevent image repetition */
   opacity: 0.9;
   position: relative;
-  top: -105px; /* Moves the background and content up into the navbar */
+  top: -115px; /* Moves the background and content up into the navbar */
   z-index: 1; /* Make sure this section is below the navbar */
+
+  
 }
 
 /* Style for the heading */
@@ -115,8 +120,6 @@ body {
     justify-content: center; /* Center vertically */
     padding: 20px; /* General padding */
     max-width: 100%; /* Make sure container doesn't exceed viewport */
-    margin: 20px;
-    
     display: flex;
     justify-content: center; /* Centers content horizontally */
     align-items: center; /* Centers content vertically */
@@ -132,30 +135,49 @@ body {
     position: relative;
     top: 60px; /* Moves the background and content up into the navbar */
     z-index: 1; /* Make sure this section is below the navbar */
+   
   }
   
   
-  .gallery-container h1 {
-    line-height: 2;
-    font-size: 3rem;
+  .gallery-container {
+    position: relative;
+    text-align: center; /* Ensures heading is centered */
+}
+
+.gallery-container h1 {
+    line-height: 1.2; /* Adjust as needed */
+    font-size: 3rem; /* Adjust as needed */
     font-family: "Varela Round", sans-serif;
     font-weight: 400;
     font-style: normal;
-    text-align: center;
     color: white;
-    margin: -20px  30px;
-    padding-right: 40px; /* Space between heading and images */
-    padding-top: 20px;
-    padding-bottom: 80px;
-    letter-spacing: 1;
-    
-  }
+    margin-bottom: 0px; /* Reset margin to control spacing precisely */
+    padding: 0; /* Reset padding if needed */
+    letter-spacing: 1px; /* Ensure spacing is in px for better control */
+    position: absolute; /* Allows precise positioning */
+    top: 0; /* Adjust this value to move the heading down or up */
+    left: 50%;
+    transform: translateX(-50%); /* Center the heading horizontally */
+    width: calc(100% - 60px); /* Adjust width to fit within the container */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+    padding-top: 20px; /* Space between heading and top of the container */
+    padding-bottom: 20px; /* Space between heading and images */
+}
+
+/* Example of styling the image container */
+.gallery-container img {
+    display: block; /* Removes any unwanted spacing below the image */
+    max-width: 100%; /* Ensures image scales with container */
+    height: auto; /* Keeps the aspect ratio */
+}
+
   
   .gallery-images {
     display: flex;
     flex-wrap: wrap; /* Allow images to wrap on smaller screens */
     justify-content: center; /* Center images horizontally */
     gap: 20px; /* Space between images */
+    opacity: 0.9;
     
   
   }
@@ -202,6 +224,7 @@ body {
   padding-top: 150px;          /* Add padding around the container */
   box-sizing: border-box; /* Include padding in width/height */
   margin-bottom: 100px;
+  margin-top: 70px;
 
 }
 
@@ -213,6 +236,7 @@ body {
   font-style: normal;
   font-size: 3rem;
   margin-top: 20px;
+  padding: 20px;
 }
 
 /* Box Styling */
@@ -251,6 +275,7 @@ body {
   font-weight: 400;
   font-style: normal;
   padding-bottom: 20px;
+  
 }     /* Font size for the heading */
 
 
@@ -261,6 +286,7 @@ body {
   font-family: "Varela Round", sans-serif;
   font-weight: 400;
   font-style: normal;
+  padding: 20px;
 }
 
 
@@ -271,6 +297,8 @@ body {
   font-weight: 400;
   font-style: normal;
   text-align: center;
+  padding: 20px;
+  margin: 0px auto;
 }
 
 
@@ -279,6 +307,92 @@ footer {
   padding: 20px;
   
   color: #fff;
+}
+
+
+/* contact Form */
+
+
+
+
+.contact-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    color: black; 
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555;
+    color: black; 
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: black; 
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+input:focus, textarea:focus {
+  border-color: red; 
+  outline: none; 
+}
+
+
+textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #f9f9f9; 
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.submit-button:hover {
+    background-color: red;
 }
 
 
