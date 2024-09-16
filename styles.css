@@ -8,24 +8,24 @@ body {
 /* Base styles for the navbar */
 .navbar {
   display: flex;
-  align-items: center; /* Vertically centers items */
-  justify-content: space-between; /* Distribute space between logo and nav-links */
-  padding: 10px 20px; /* Adjust padding as needed */
-   /* Make navbar transparent */
-  color: white; /* Text color */
+  align-items: center; 
+  justify-content: space-between; 
+  padding: 10px 20px; 
+   color: white; 
   position: relative;
-  z-index: 10; /* Keep the navbar on top */
+  z-index: 10; 
   width: 100%;
  
 }
 
 /* Style for the logo */
 .logo img {
-  height: 60px; /* Adjust height as needed */
-  width: auto; /* Maintain aspect ratio */
+  height: 60px; 
+  width: auto; 
   padding-right: 30px;
   padding-top: 20px;
   padding-left: 50px;
+  opacity: 0.8;
 }
 
 /* Style for the navigation links container */
@@ -37,28 +37,29 @@ body {
 
 /* Style for the navigation links list */
 .nav-links {
-  list-style-type: none; /* Remove default list styling */
+  list-style-type: none; 
   margin-right: 50px;
   padding: 0;
-  display: flex; /* Display list items in a row */
+  display: flex; 
   justify-content: center;
   font-family: "Varela Round", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.75rem;
+  opacity: 0.8;
 }
 
 /* Style for each navigation link */
 .nav-links li {
-  margin: 0 50px; /* Space between each link */
+  margin: 0 50px; 
   margin-right: 50px;
 }
 
 /* Style for the links */
 .nav-links a {
-  color: white; /* Link color */
-  text-decoration: none; /* Remove underline from links */
-  font-size: 16px; /* Font size of links */
+  color: white; 
+  text-decoration: none;
+  font-size: 16px; 
 }
 
 /* Optional: Add hover effect */
@@ -72,10 +73,8 @@ body {
   display: flex;
   justify-content: center; /* Centers content horizontally */
   align-items: center; /* Centers content vertically */
-  text-align: left; /* Aligns text inside child elements to the left */
   height: 70vh; /* Height of the container */
   width: 100%; /* Full width of its parent */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
   background-image: url('images/jonathan-gallegos-5FGqfV6UjzI-unsplash.jpg'); /* Path to your image */
   background-size: cover; /* Cover the container while maintaining the aspect ratio */
   background-position: center; /* Center the background image */
@@ -102,9 +101,11 @@ body {
   margin-top: 0;
   position: relative;
   z-index: 1; /* Make sure the text is above the background */
+  box-sizing: border-box; /* Ensure padding is included in width calculations */
+  opacity: 0.8;
 }
 
-/* Ensures navbar content remains visible above the background */
+
 
 
   
@@ -118,7 +119,6 @@ body {
     flex-direction: column; /* Stack content vertically */
     align-items: center; /* Center horizontally */
     justify-content: center; /* Center vertically */
-    padding: 20px; /* General padding */
     max-width: 100%; /* Make sure container doesn't exceed viewport */
     display: flex;
     justify-content: center; /* Centers content horizontally */
@@ -126,15 +126,13 @@ body {
     text-align: left; /* Aligns text inside child elements to the left */
     height: 70vh; /* Height of the container */
     width: 100%; /* Full width of its parent */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    background-image: url('images/volodymyr-dobrovolskyy-4ikqFbcDKpg-unsplash\ \(1\).jpg'); /* Path to your image */
     background-size: cover; /* Cover the container while maintaining the aspect ratio */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent image repetition */
-    opacity: 0.9;
     position: relative;
     top: 60px; /* Moves the background and content up into the navbar */
     z-index: 1; /* Make sure this section is below the navbar */
+    background-color: #333;
    
   }
   
@@ -159,56 +157,57 @@ body {
     left: 50%;
     transform: translateX(-50%); /* Center the heading horizontally */
     width: calc(100% - 60px); /* Adjust width to fit within the container */
-    box-sizing: border-box; /* Ensures padding is included in the width */
-    padding-top: 20px; /* Space between heading and top of the container */
-    padding-bottom: 20px; /* Space between heading and images */
+    padding-top: 10px; /* Space between heading and top of the container */
+    padding-bottom: 10px; /* Space between heading and images */
 }
 
 /* Example of styling the image container */
 .gallery-container img {
-    display: block; /* Removes any unwanted spacing below the image */
-    max-width: 100%; /* Ensures image scales with container */
-    height: auto; /* Keeps the aspect ratio */
+    display: block; 
+    max-width: 100%; 
+    height: auto; 
 }
 
   
   .gallery-images {
     display: flex;
-    flex-wrap: wrap; /* Allow images to wrap on smaller screens */
-    justify-content: center; /* Center images horizontally */
-    gap: 20px; /* Space between images */
-    opacity: 0.9;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    
     
   
   }
   
   .gallery-images img {
     height: 200px;
+    opacity: 0.8;
     
-    width:200px; /* Adjust image size */
+    width: 200px;
     border-radius: 50%;
     padding: 10px;
     margin: 20px;
     transition: transform 0.3s ease-in-out;
+   
 
 
   }
 
   .icon-small {
-    font-size: 18px; /* Adjust this size as needed */
-    margin: 0 8px; /* Space between icons */
+    font-size: 18px; 
+    margin: 0 8px; 
     padding-top: 15px;
 }
 
 .nav-links {
-    list-style: none; /* Removes default list styling */
-    padding: 0; /* Removes default padding */
-    display: flex; /* Aligns items in a row */
-    align-items: center; /* Centers items vertically */
+    list-style: none; 
+    padding: 0;
+    display: flex; 
+    align-items: center; 
 }
 
 .nav-links li {
-    margin: 0 30px; /* Optional: Space between nav items */
+    margin: 0 30px; 
 }
 
 /* Team */
@@ -216,15 +215,16 @@ body {
 /* Flex Container */
 .team-container {
   display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: center;    /* Center items horizontally */
-  justify-content: center; /* Center items vertically */
-  height: 100vh;          /* Full viewport height */
-  width: 100%;            /* Full width */
-  padding-top: 150px;          /* Add padding around the container */
-  box-sizing: border-box; /* Include padding in width/height */
-  margin-bottom: 100px;
-  margin-top: 70px;
+  flex-direction: column; 
+  align-items: center;    
+  justify-content: center; 
+  height: 100vh;          
+  width: 100%;            
+  padding: 10px;         
+  box-sizing: border-box; 
+
+  
+ 
 
 }
 
@@ -235,20 +235,21 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 3rem;
-  margin-top: 20px;
-  padding: 20px;
+  opacity: 0.8;
+  
+ 
+ 
 }
 
 /* Box Styling */
 .team-box {
   display: flex;
-  flex-direction: column; /* Stack image and text vertically */
-  align-items: center;    /* Center items horizontally */
-  justify-content: center; /* Center items vertically */
-  width: 300px;           /* Set a fixed width for the box */
-  
-  border-radius: 50%;     /* Rounded corners */
-  padding: 20px;          /* Padding inside the box */
+  flex-direction: column; 
+  align-items: center;    
+  justify-content: center; 
+  width: 300px;           
+   border-radius: 50%;     
+  padding: 20px;          
 
   
  
@@ -256,37 +257,42 @@ body {
 
 /* Image Styling */
 .team-image img {
-  max-width: 100%;         /* Ensure image fits within the box */
-  height: auto;            /* Maintain aspect ratio */
-  border-radius: 5px;     /* Rounded corners for the image */
+    height: 200px;
+    width: 200px; 
+    border-radius: 50%;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out;
+    opacity: 0.8;
 }
 
 /* Text Styling */
 .team-text {
-  text-align: center;      /* Center text within the box */
-  margin-top: 10px;        /* Space between image and text */
+  text-align: center;      
+  margin-top: 10px;       
 }
 
 .team-text h2 {
-  margin: 0;               /* Remove default margin for heading */
+  margin: 0;               
   font-size: 1.5em; 
   color: #f9f9f9;  
   font-family: "Varela Round", sans-serif;
   font-weight: 400;
   font-style: normal;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  opacity: 0.8;
   
-}     /* Font size for the heading */
+}     
 
 
 .team-text p {
-  margin: 0;               /* Remove default margin for paragraph */
-  font-size: 1em;          /* Font size for the paragraph */
+  margin: 0;               
+  font-size: 1em;          
   color: #f9f9f9; 
   font-family: "Varela Round", sans-serif;
   font-weight: 400;
   font-style: normal;
   padding: 20px;
+  opacity: 0.8;
 }
 
 
@@ -299,13 +305,16 @@ body {
   text-align: center;
   padding: 20px;
   margin: 0px auto;
+  opacity: 0.8;
 }
 
 
 footer {
   text-align: center;
-  padding: 20px;
-  
+ padding: 10px;
+  background-color: #333;
+  opacity: 0.8;
+  width: 100%;
   color: #fff;
 }
 
@@ -333,6 +342,7 @@ h1 {
     font-family: "Varela Round", sans-serif;
     font-weight: 400;
     font-style: normal;
+    opacity: 0.8;
 }
 
 .contact-form {
@@ -417,4 +427,12 @@ textarea {
       font-size: 2.5rem; /* Adjust font size for smaller screens */
     }
   }
-  
+
+  @media (max-width: 768px) {
+    .home-text h1 {
+        padding-left: 20px; /* Reduced padding for smaller screens */
+        padding-right: 20px; /* Reduced padding for smaller screens */
+        font-size: 1.5rem; /* Adjust font size for better fit */
+    }
+}
+
