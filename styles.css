@@ -1,323 +1,181 @@
+/* Global Styles */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: black;
- 
+  color: white;
 }
 
-/* Base styles for the navbar */
+/* Navbar */
 .navbar {
-  display: flex;
-  align-items: center; 
-  justify-content: space-between; 
-  padding: 10px 20px; 
-   color: white; 
-  position: relative;
-  z-index: 10; 
+  position: absolute; /* Position navbar on top of content */
+  top: 0;
   width: 100%;
- 
-}
-
-/* Style for the logo */
-.logo img {
-  height: 60px; 
-  width: auto; 
-  padding-right: 30px;
-  padding-top: 20px;
-  padding-left: 50px;
-  opacity: 0.8;
-}
-
-/* Style for the navigation links container */
-.container {
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-
-/* Style for the navigation links list */
-.nav-links {
-  list-style-type: none; 
-  margin-right: 50px;
-  padding: 0;
-  display: flex; 
-  justify-content: center;
-  font-family: "Varela Round", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.75rem;
-  opacity: 0.8;
-}
-
-/* Style for each navigation link */
-.nav-links li {
-  margin: 0 50px; 
-  margin-right: 50px;
-}
-
-/* Style for the links */
-.nav-links a {
-  color: white; 
-  text-decoration: none;
-  font-size: 16px; 
-}
-
-/* Optional: Add hover effect */
-.nav-links a:hover {
-  color: rgb(219, 42, 42);
-
-}
-
-/* Home Text Section - Ensure the parent container is centered */
-.home-text .container {
-  display: flex;
-  justify-content: center; /* Centers content horizontally */
-  align-items: center; /* Centers content vertically */
-  height: 70vh; /* Height of the container */
-  width: 100%; /* Full width of its parent */
-  background-image: url('images/jonathan-gallegos-5FGqfV6UjzI-unsplash.jpg'); /* Path to your image */
-  background-size: cover; /* Cover the container while maintaining the aspect ratio */
-  background-position: center; /* Center the background image */
-  background-repeat: no-repeat; /* Prevent image repetition */
-  opacity: 0.9;
-  position: relative;
-  top: -115px; /* Moves the background and content up into the navbar */
-  z-index: 1; /* Make sure this section is below the navbar */
-
-  
-}
-
-/* Style for the heading */
-.home-text h1 {
-  line-height: 2;
-  font-size: 2rem;
-  font-family: "Varela Round", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  padding-left: 50px;
-  padding-right: 50px;
+  justify-content: space-between;
+  padding: 20px 50px;
   color: white;
-  text-align: center;
-  margin-top: 0;
-  position: relative;
-  z-index: 1; /* Make sure the text is above the background */
-  box-sizing: border-box; /* Ensure padding is included in width calculations */
+  z-index: 10; /* Ensure navbar stays on top of other elements */
+  box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.logo img {
+  height: 60px;
   opacity: 0.8;
-}
-
-
-
-
-  
-
-  /* gallery */
-
-
-    
-  .gallery-container {
-    display: flex;
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Center horizontally */
-    justify-content: center; /* Center vertically */
-    max-width: 100%; /* Make sure container doesn't exceed viewport */
-    display: flex;
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
-    text-align: left; /* Aligns text inside child elements to the left */
-    height: 70vh; /* Height of the container */
-    width: 100%; /* Full width of its parent */
-    background-size: cover; /* Cover the container while maintaining the aspect ratio */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Prevent image repetition */
-    position: relative;
-    top: 60px; /* Moves the background and content up into the navbar */
-    z-index: 1; /* Make sure this section is below the navbar */
-    background-color: #333;
-   
-  }
-  
-  
-  .gallery-container {
-    position: relative;
-    text-align: center; /* Ensures heading is centered */
-}
-
-.gallery-container h1 {
-    line-height: 1.2; /* Adjust as needed */
-    font-size: 3rem; /* Adjust as needed */
-    font-family: "Varela Round", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: white;
-    margin-bottom: 0px; /* Reset margin to control spacing precisely */
-    padding: 0; /* Reset padding if needed */
-    letter-spacing: 1px; /* Ensure spacing is in px for better control */
-    position: absolute; /* Allows precise positioning */
-    top: 0; /* Adjust this value to move the heading down or up */
-    left: 50%;
-    transform: translateX(-50%); /* Center the heading horizontally */
-    width: calc(100% - 60px); /* Adjust width to fit within the container */
-    padding-top: 10px; /* Space between heading and top of the container */
-    padding-bottom: 10px; /* Space between heading and images */
-}
-
-/* Example of styling the image container */
-.gallery-container img {
-    display: block; 
-    max-width: 100%; 
-    height: auto; 
-}
-
-  
-  .gallery-images {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
-    gap: 20px; 
-    
-    
-  
-  }
-  
-  .gallery-images img {
-    height: 200px;
-    opacity: 0.8;
-    
-    width: 200px;
-    border-radius: 50%;
-    padding: 10px;
-    margin: 20px;
-    transition: transform 0.3s ease-in-out;
-   
-
-
-  }
-
-  .icon-small {
-    font-size: 18px; 
-    margin: 0 8px; 
-    padding-top: 15px;
 }
 
 .nav-links {
-    list-style: none; 
-    padding: 0;
-    display: flex; 
-    align-items: center; 
+  list-style-type: none;
+  display: flex;
+  align-items: center;
 }
 
 .nav-links li {
-    margin: 0 30px; 
+  margin: 0 30px;
 }
 
-/* Team */
-
-/* Flex Container */
-.team-container {
-  display: flex;
-  flex-direction: column; 
-  align-items: center;    
-  justify-content: center; 
-  height: 100vh;          
-  width: 100%;            
-  padding: 10px;         
-  box-sizing: border-box; 
-
-  
- 
-
-}
-
-
-.team-container h1 {
-  color: #f9f9f9;
-  font-family: "Varela Round", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 3rem;
-  opacity: 0.8;
-  
- 
- 
-}
-
-/* Box Styling */
-.team-box {
-  display: flex;
-  flex-direction: column; 
-  align-items: center;    
-  justify-content: center; 
-  width: 300px;           
-   border-radius: 50%;     
-  padding: 20px;          
-
-  
- 
-}
-
-/* Image Styling */
-.team-image img {
-    height: 200px;
-    width: 200px; 
-    border-radius: 50%;
-    padding: 10px;
-    transition: transform 0.3s ease-in-out;
-    opacity: 0.8;
-}
-
-/* Text Styling */
-.team-text {
-  text-align: center;      
-  margin-top: 10px;       
-}
-
-.team-text h2 {
-  margin: 0;               
-  font-size: 1.5em; 
-  color: #f9f9f9;  
-  font-family: "Varela Round", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  padding-bottom: 10px;
-  opacity: 0.8;
-  
-}     
-
-
-.team-text p {
-  margin: 0;               
-  font-size: 1em;          
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+  opacity: 0.9;
   color: #f9f9f9; 
   font-family: "Varela Round", sans-serif;
   font-weight: 400;
   font-style: normal;
-  padding: 20px;
+}
+
+
+.nav-links a:hover {
+  color: rgb(219, 42, 42);
+}
+
+/* Header Section */
+.site-header {
+  position: relative;
+  height: 70vh; /* Full viewport height */
+  background-image: url('images/jonathan-gallegos-5FGqfV6UjzI-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Text Section Below the Image */
+.intro-text {
+  background-color: black;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.intro-text h1 {
+  font-size: 2.5rem;
+  font-family: "Varela Round", sans-serif;
+  opacity: 0.9;
+  padding: 40px;
+}
+
+/* Gallery Section */
+.gallery-container {
+  padding: 50px 20px;
+  background-color: #333;
+  text-align: center;
+  position: relative;
+  height: 50vh; /* Full viewport height */
+  background-image: url('images/brad-killen-3zZmKX0StLo-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+.gallery-container h1 {
+  font-size: 3rem;
+  margin-top: 140px;
+  color: #f9f9f9; 
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+ 
+}
+.gallery-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.gallery-images img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
   opacity: 0.8;
+  transition: transform 0.3s ease-in-out;
+ 
+}
+
+.gallery-images img:hover {
+  transform: scale(1.2);
+}
+
+/* Team Section */
+.team-container {
+  padding: 50px 20px;
+  background-color: black;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.team-container h1 {
+  font-size: 3rem;
+  opacity: 0.9;
+  color: #f9f9f9; 
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 
 .team-container p {
-  color: #f9f9f9;
-  font-size: 2em; 
+  font-size: 2rem;
+  color: #f9f9f9; 
   font-family: "Varela Round", sans-serif;
   font-weight: 400;
   font-style: normal;
-  text-align: center;
-  padding: 20px;
-  margin: 0px auto;
+}
+.team-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.team-image img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
   opacity: 0.8;
 }
 
+.team-text h2 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  opacity: 0.9;
+  color: #f9f9f9; 
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  
+}
 
+/* Footer */
 footer {
   text-align: center;
- padding: 10px;
+  padding: 20px;
   background-color: #333;
   opacity: 0.8;
-  width: 100%;
-  color: #fff;
 }
-
 
 /* contact Form */
 
@@ -325,114 +183,95 @@ footer {
 
 
 .contact-container {
-    width: 90%;
-    max-width: 600px;
-    margin: 2rem auto;
-    padding: 1rem;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 100px;
+  width: 90%;
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 190px;
 }
 
-h1 {
-    text-align: center;
-    color: #333;
-    color: black; 
-    font-family: "Varela Round", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    opacity: 0.8;
+ .contact-container h1 {
+  text-align: center;
+  color: black;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  opacity: 0.8;
+  line-height: 2;
+  
 }
 
 .contact-form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-group {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-    color: #555;
-    color: black; 
-    font-family: "Varela Round", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #555;
+  color: black; 
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 input, textarea {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    color: black; 
-    font-family: "Varela Round", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: black; 
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 input:focus, textarea:focus {
-  border-color: red; 
-  outline: none; 
+border-color: red; 
+outline: none; 
 }
 
 
 textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
 .submit-button {
-    background-color: black;
-    color: #fff;
-    border: none;
-    padding: 0.75rem;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1rem;
-    color: #f9f9f9; 
-    font-family: "Varela Round", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #f9f9f9; 
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .submit-button:hover {
-    background-color: red;
+  background-color: red;
 }
 
-
-
-
-
-
-
-
-
-  .gallery-images img:hover {
-    transform: scale(1.2); /* Expand image by 20% */
-    border-radius: 50%; /* Optional: change border-radius when hovering */
-  }
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .gallery-images img {
-      max-width: 100%; /* Full width images on small screens */
-    }
-  
-    .gallery-container h1 {
-      font-size: 2.5rem; /* Adjust font size for smaller screens */
-    }
+/* Responsive Design */
+@media (max-width: 768px) {
+  .intro-text h1 {
+    font-size: 1.8rem;
   }
 
-  @media (max-width: 768px) {
-    .home-text h1 {
-        padding-left: 20px; /* Reduced padding for smaller screens */
-        padding-right: 20px; /* Reduced padding for smaller screens */
-        font-size: 1.5rem; /* Adjust font size for better fit */
-    }
+  .gallery-container h1,
+  .team-container h1 {
+    font-size: 2.5rem;
+  }
 }
-
